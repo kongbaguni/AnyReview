@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainContentView.swift
 //  AnyReview
 //
 //  Created by Changyul Seo on 2020/06/16.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainContentView: View {
     var body: some View {
-        LoginView()
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()        
+        MainContentView()
     }
 }
