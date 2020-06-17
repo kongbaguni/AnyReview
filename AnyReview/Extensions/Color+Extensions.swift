@@ -15,7 +15,19 @@ extension Color {
     static var shadowColor:Color {
         Color("shadowColor")
     }
-    static var buttonColor:Color {
-        Color("buttonColor")
+    static var buttonBgColor:Color {
+        Color("buttonBgColor")
+    }
+    static var buttonStrockColor:Color {
+        Color("buttonStrockColor")
+    }
+    static var textFieldBgColor:Color {
+        Color("textFieldBgColor")
+    }
+    static var textFieldTextColor:Color {
+        Color("textFieldTextColor")
+    }
+    static var imageButtonOveray:Color {
+        Color("imageButtonOveray")
     }
 }

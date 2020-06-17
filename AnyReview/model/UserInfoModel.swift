@@ -18,12 +18,18 @@ class UserInfoModel: Object {
     @objc dynamic var point:Int = 0
     @objc dynamic var exp:Int = 0
     
-    
+    @objc dynamic var token:String = ""
     override static func primaryKey() -> String? {
         return "email"
     }
     
     override static func indexedProperties() -> [String] {
         return ["name"]
+    }
+}
+
+extension UserInfoModel {
+    static var myInfo:UserInfoModel? {
+        try! Realm().objects(UserInfoModel.self).filter("token != $@","").first
     }
 }

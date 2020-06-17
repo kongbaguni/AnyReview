@@ -104,7 +104,7 @@ extension SigninWithApple : ASAuthorizationControllerDelegate {
                     let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
                     if let windowScenedelegate = scene?.delegate as? SceneDelegate {
                        let window = UIWindow(windowScene: scene!)
-                       window.rootViewController = UIHostingController(rootView:MainContentView())
+                       window.rootViewController = UIHostingController(rootView:MainTabView())
                        windowScenedelegate.window = window
                        window.makeKeyAndVisible()
                     }

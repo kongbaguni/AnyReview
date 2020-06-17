@@ -9,22 +9,21 @@
 import SwiftUI
 
 struct ButtonView: View {
-    fileprivate var image:Image
-    fileprivate var title:String
-    fileprivate var action:()->Void
-    init(image:Image,title:String, action:@escaping()->Void) {
-        self.image = image
-        self.title = title
-        self.action = action
-    }
+    let image:Image
+    let title:String
+    let action:()->Void
+
     var body: some View {
         Button(action: action) {
             HStack {
                 image.resizable().scaledToFit().padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
                     .frame(width: 40, height: 40, alignment: .center)
                 Text(title).fontWeight(.bold).padding(10)
-            }.overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.strockColor,lineWidth: 2))
-        }.foregroundColor(.buttonColor)
+            }
+            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.strockColor,lineWidth: 2))
+            }.foregroundColor(.buttonStrockColor)
+            .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.buttonBgColor))
+            
     }
 }
 

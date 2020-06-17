@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,7 +23,14 @@
 		C36C0BE02498A6B700FED53E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0BDF2498A6B700FED53E /* ButtonView.swift */; };
 		C36C0BE62498AC2800FED53E /* SigninWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0BE52498AC2800FED53E /* SigninWithApple.swift */; };
 		C36C0BEB2498BA6700FED53E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C36C0BEA2498BA6700FED53E /* GoogleService-Info.plist */; };
-		C36C0BED2498BB3300FED53E /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0BEC2498BB3300FED53E /* MainContentView.swift */; };
+		C36C0BF12498C2F700FED53E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0BF02498C2F700FED53E /* MainTabView.swift */; };
+		C36C0BF32498C37F00FED53E /* ReviewNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0BF22498C37F00FED53E /* ReviewNavigationView.swift */; };
+		C36C0BF52499AED800FED53E /* ProfileSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0BF42499AED800FED53E /* ProfileSettingView.swift */; };
+		C36C0BF72499B70300FED53E /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0BF62499B70300FED53E /* RoundedTextField.swift */; };
+		C36C0BF92499D15600FED53E /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0BF82499D15600FED53E /* ImageButton.swift */; };
+		C36C0BFB2499DCF500FED53E /* NetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0BFA2499DCF500FED53E /* NetImageView.swift */; };
+		C36C0BFE2499E4CB00FED53E /* SwURL in Frameworks */ = {isa = PBXBuildFile; productRef = C36C0BFD2499E4CB00FED53E /* SwURL */; };
+		C36C0C01249A104C00FED53E /* ImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = C36C0C00249A104C00FED53E /* ImagePicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +56,12 @@
 		C36C0BE52498AC2800FED53E /* SigninWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithApple.swift; sourceTree = "<group>"; };
 		C36C0BE72498B09A00FED53E /* AnyReview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnyReview.entitlements; sourceTree = "<group>"; };
 		C36C0BEA2498BA6700FED53E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C36C0BEC2498BB3300FED53E /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		C36C0BF02498C2F700FED53E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C36C0BF22498C37F00FED53E /* ReviewNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewNavigationView.swift; sourceTree = "<group>"; };
+		C36C0BF42499AED800FED53E /* ProfileSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingView.swift; sourceTree = "<group>"; };
+		C36C0BF62499B70300FED53E /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		C36C0BF82499D15600FED53E /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		C36C0BFA2499DCF500FED53E /* NetImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetImageView.swift; sourceTree = "<group>"; };
 		D399312FF1D71A6BB84AAFAB /* Pods-AnyReview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyReview.debug.xcconfig"; path = "Target Support Files/Pods-AnyReview/Pods-AnyReview.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36C0BFE2499E4CB00FED53E /* SwURL in Frameworks */,
+				C36C0C01249A104C00FED53E /* ImagePicker in Frameworks */,
 				A1090431CBC5390C128C8862 /* Pods_AnyReview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +156,13 @@
 			isa = PBXGroup;
 			children = (
 				C36C0BCF24989B4300FED53E /* LoginView.swift */,
+				C36C0BF82499D15600FED53E /* ImageButton.swift */,
+				C36C0BF62499B70300FED53E /* RoundedTextField.swift */,
 				C36C0BDF2498A6B700FED53E /* ButtonView.swift */,
-				C36C0BEC2498BB3300FED53E /* MainContentView.swift */,
+				C36C0BF02498C2F700FED53E /* MainTabView.swift */,
+				C36C0BF22498C37F00FED53E /* ReviewNavigationView.swift */,
+				C36C0BF42499AED800FED53E /* ProfileSettingView.swift */,
+				C36C0BFA2499DCF500FED53E /* NetImageView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -192,6 +211,10 @@
 			dependencies = (
 			);
 			name = AnyReview;
+			packageProductDependencies = (
+				C36C0BFD2499E4CB00FED53E /* SwURL */,
+				C36C0C00249A104C00FED53E /* ImagePicker */,
+			);
 			productName = AnyReview;
 			productReference = C36C0BB424985AEF00FED53E /* AnyReview.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +244,10 @@
 				ko,
 			);
 			mainGroup = C36C0BAB24985AEF00FED53E;
+			packageReferences = (
+				C36C0BFC2499E4CB00FED53E /* XCRemoteSwiftPackageReference "SwURL" */,
+				C36C0BFF249A104C00FED53E /* XCRemoteSwiftPackageReference "image-picker" */,
+			);
 			productRefGroup = C36C0BB524985AEF00FED53E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -313,13 +340,18 @@
 				C36C0BB824985AEF00FED53E /* AppDelegate.swift in Sources */,
 				C36C0BD72498A02F00FED53E /* String+Extensions.swift in Sources */,
 				C36C0BE02498A6B700FED53E /* ButtonView.swift in Sources */,
+				C36C0BF72499B70300FED53E /* RoundedTextField.swift in Sources */,
 				C36C0BBA24985AEF00FED53E /* SceneDelegate.swift in Sources */,
 				C36C0BCD249895B600FED53E /* UserInfoModel.swift in Sources */,
+				C36C0BFB2499DCF500FED53E /* NetImageView.swift in Sources */,
 				C36C0BD024989B4300FED53E /* LoginView.swift in Sources */,
 				C36C0BE62498AC2800FED53E /* SigninWithApple.swift in Sources */,
 				C36C0BBC24985AEF00FED53E /* ContentView.swift in Sources */,
+				C36C0BF32498C37F00FED53E /* ReviewNavigationView.swift in Sources */,
+				C36C0BF52499AED800FED53E /* ProfileSettingView.swift in Sources */,
+				C36C0BF92499D15600FED53E /* ImageButton.swift in Sources */,
 				C36C0BD524989D8400FED53E /* Color+Extensions.swift in Sources */,
-				C36C0BED2498BB3300FED53E /* MainContentView.swift in Sources */,
+				C36C0BF12498C2F700FED53E /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +561,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C36C0BFC2499E4CB00FED53E /* XCRemoteSwiftPackageReference "SwURL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cmtrounce/SwURL";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+		C36C0BFF249A104C00FED53E /* XCRemoteSwiftPackageReference "image-picker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/achernoprudov/image-picker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C36C0BFD2499E4CB00FED53E /* SwURL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C36C0BFC2499E4CB00FED53E /* XCRemoteSwiftPackageReference "SwURL" */;
+			productName = SwURL;
+		};
+		C36C0C00249A104C00FED53E /* ImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C36C0BFF249A104C00FED53E /* XCRemoteSwiftPackageReference "image-picker" */;
+			productName = ImagePicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C36C0BAC24985AEF00FED53E /* Project object */;
 }
